@@ -179,25 +179,7 @@ counters.forEach(counter => {
     counterObserver.observe(counter);
 });
 
-// Contact Form Prevention (Mock)
-const contactForm = document.getElementById('contact-form');
-if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const btn = contactForm.querySelector('button');
-        const originalText = btn.innerText;
-        btn.innerText = 'Sending...';
-        setTimeout(() => {
-            btn.innerText = 'Message Sent!';
-            btn.style.backgroundColor = '#4CAF50';
-            contactForm.reset();
-            setTimeout(() => {
-                btn.innerText = originalText;
-                btn.style.backgroundColor = '';
-            }, 3000);
-        }, 1500);
-    });
-}
+// Contact Form Prevention (Mock) removed so FormSubmit can work
 
 // Security Protections (Disable Right-Click, PrintScreen detection, Save Page, and DevTools shortcuts)
 document.addEventListener('contextmenu', (e) => {
@@ -210,28 +192,44 @@ document.addEventListener('keydown', (e) => {
         e.preventDefault();
     }
     // Disable Ctrl+Shift+I (Inspect element)
-    if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+    if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i')) {
         e.preventDefault();
     }
     // Disable Ctrl+Shift+C (Inspect elements selector)
-    if (e.ctrlKey && e.shiftKey && e.key === 'C') {
+    if (e.ctrlKey && e.shiftKey && (e.key === 'C' || e.key === 'c')) {
         e.preventDefault();
     }
     // Disable Ctrl+Shift+J (Console panel)
-    if (e.ctrlKey && e.shiftKey && e.key === 'J') {
+    if (e.ctrlKey && e.shiftKey && (e.key === 'J' || e.key === 'j')) {
         e.preventDefault();
     }
     // Disable Ctrl+U (View Source)
-    if (e.ctrlKey && e.key === 'u') {
+    if (e.ctrlKey && (e.key === 'U' || e.key === 'u')) {
         e.preventDefault();
     }
     // Disable Ctrl+S (Save page)
-    if (e.ctrlKey && e.key === 's') {
+    if (e.ctrlKey && (e.key === 'S' || e.key === 's')) {
         e.preventDefault();
     }
     // Disable Ctrl+P (Print page)
-    if (e.ctrlKey && e.key === 'p') {
+    if (e.ctrlKey && (e.key === 'P' || e.key === 'p')) {
         e.preventDefault();
+    }
+    // Disable Windows Snipping Tool (Meta+Shift+S)
+    if (e.metaKey && e.shiftKey && (e.key === 'S' || e.key === 's')) {
+        e.preventDefault();
+    }
+    // Disable Mac OS Screenshots (Meta+Shift+3 or 4)
+    if (e.metaKey && e.shiftKey && (e.key === '3' || e.key === '4')) {
+        e.preventDefault();
+    }
+});
+
+document.addEventListener('keyup', (e) => {
+    // Disable PrintScreen key
+    if (e.key === 'PrintScreen') {
+        navigator.clipboard.writeText('');
+        alert('Screenshots are disabled on this website for security reasons.');
     }
 });
 
@@ -241,6 +239,17 @@ window.addEventListener('beforeprint', () => {
 });
 window.addEventListener('afterprint', () => {
     document.body.style.filter = 'none';
+});
+
+// Blur website when it loses focus to prevent OS snipping tools
+window.addEventListener('blur', () => {
+    // Highly blur the portrait image container specifically, and the body
+    document.body.style.filter = 'blur(20px)';
+    document.body.style.opacity = '0.1'; // Make it very hard to see
+});
+window.addEventListener('focus', () => {
+    document.body.style.filter = 'none';
+    document.body.style.opacity = '1';
 });
 
 // Certificate Modal Functionality
