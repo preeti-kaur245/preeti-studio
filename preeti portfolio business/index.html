@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preeti Studio | Designs That Tell Stories</title>
+    <meta name="description" content="A visually stunning, premium portfolio website for Preeti Studio. Creative digital experiences crafted with simplicity, emotion and purpose.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor></div>
+    <div class="cursor-outline" data-cursor></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Loading Animation -->
+    <div class="loader-wrapper">
+        <h1 class="loader-text">PREETI STUDIO</h1>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">PREETI STUDIO</a>
+            <ul class="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content container">
+            <h1 class="hero-title reveal-text">Designs That Tell Stories.</h1>
+            <p class="hero-subtitle reveal-text delay-1">Creative digital experiences crafted with simplicity, emotion and purpose.</p>
+            <div class="hero-cta reveal-text delay-2">
+                <a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+        <div class="floating-elements">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image fade-in">
+                    <div class="portrait-container">
+                        <img src="./assets/manpreet_kaur.jpg" alt="Manpreet Kaur - Founder of Preeti Studio" class="portrait-image" draggable="false" oncontextmenu="return false;">
+                    </div>
+                </div>
+                <div class="about-text fade-in delay-1">
+                    <h2 class="section-title">About the Founder</h2>
+                    <h3 class="founder-name">Manpreet Kaur</h3>
+                    <p>I am a student at RIMT University and a passionate creative designer with experience in Poster Design, Magazine Design, Social Media Design, Presentation Design, Creative Branding, and Digital Visual Storytelling.</p>
+                    <p>I specialize in AI product designing & branding and I also create awesome designs from scratch. The best part? You can't analyze which one is AI-based at a glance!</p>
+                    <blockquote class="philosophy">
+                        "Perfection is achieved not when there is nothing left to add, but when there is nothing left to take away."
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Your one-stop creative design destination.</p>
+            </div>
+            
+            <div class="services-notice fade-in">
+                <p><strong>NOTICE:</strong> All services are delivered digitally only. Clients receive high-quality files in formats such as PNG, JPG, PDF, PPT and other digital formats. No physical products or shipping.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="./assets/1%20couple%20template%20design.png" alt="Relationship &amp; Friendship Designs Sample" loading="lazy">
+                    </div>
+                    <h3>1. Relationship &amp; Friendship Designs</h3>
+                    <p>Couple collages, Friendship memory posters, Best friend birthday edits, Anniversary posters, "How We Met" story posters, Love letter visual designs, custom design couple posters, Movie poster style couple edits.</p>
+                    <span class="price">₹49–₹199</span>
+                </div>
+                <div class="service-card fade-in delay-1">
+                    <div class="service-image">
+                        <img src="./assets/2%20graduation%20template.png" alt="Personalized Magazine Covers Sample" loading="lazy">
+                    </div>
+                    <h3>2. Personalized Magazine Covers</h3>
+                    <p>Birthday magazine cover, "Most Wanted Bachelor" cover, Graduation cover, Couple magazine cover, "Future CEO" cover, "Class Topper" cover, "College Celebrity" cover.</p>
+                    <span class="price">₹99–₹299</span>
+                </div>
+                <div class="service-card fade-in delay-2">
+                    <div class="service-image">
+                        <img src="./assets/3%20instagram%20template.png" alt="Instagram Content Packs Sample" loading="lazy">
+                    </div>
+                    <h3>3. Instagram Content Packs</h3>
+                    <p>Insta post templates, Story templates, Highlight covers, Quote posts.</p>
+                    <span class="price">₹99–₹399</span>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="./assets/4%20fresher%20party%20template.png" alt="Event Posters Sample" loading="lazy">
+                    </div>
+                    <h3>4. Event Posters</h3>
+                    <p>Fresher party, Farewell, Society events, Club recruitment, Workshops, Seminars, Competitions.</p>
+                    <span class="price">₹100–₹500+</span>
+                </div>
+                <div class="service-card fade-in delay-1">
+                    <div class="service-image">
+                        <img src="./assets/5%20portfolio%20deisgn.png" alt="Resume + LinkedIn Design Sample" loading="lazy">
+                    </div>
+                    <h3>5. Resume + LinkedIn Design</h3>
+                    <p>Modern resume, LinkedIn banner, Portfolio cover page.</p>
+                    <span class="price">₹199–₹499</span>
+                </div>
+                <div class="service-card fade-in delay-2">
+                    <div class="service-image">
+                        <img src="./assets/6%20graduation%20template.png" alt="Memory Book Pages Sample" loading="lazy">
+                    </div>
+                    <h3>6. Memory Book Pages</h3>
+                    <p>Birthday memory page, Friendship timeline, Graduation memory page, School memories collage.</p>
+                    <span class="price">₹99–₹299</span>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-image">
+                        <img src="./assets/7%20beautiful%20flower%20asthetic%20wallpaper.jpg" alt="Custom Wallpapers Sample" loading="lazy">
+                    </div>
+                    <h3>7. Custom Wallpapers</h3>
+                    <p>Couple wallpaper, Motivational wallpaper, Name wallpaper, Aesthetic wallpaper.</p>
+                    <span class="price">₹29–₹99</span>
+                </div>
+                <div class="service-card fade-in delay-1">
+                    <div class="service-image">
+                        <img src="./assets/8%20report%20template.png" alt="College Notes Covers Sample" loading="lazy">
+                    </div>
+                    <h3>8. College Notes Covers</h3>
+                    <p>Subject covers, Assignment covers, Project report covers, Presentation covers.</p>
+                    <span class="price">₹30–₹150</span>
+                </div>
+                <div class="service-card fade-in delay-2">
+                    <div class="service-image">
+                        <img src="./assets/9%20ppt%20template.png" alt="Presentation Makeovers Sample" loading="lazy">
+                    </div>
+                    <h3>9. Presentation Makeovers</h3>
+                    <p>PPT design, Academic presentations, Competition presentations.</p>
+                    <span class="price">₹200–₹1000</span>
+                </div>
+            </div>
+
+            <div class="bundle-offer fade-in">
+                <div class="service-image">
+                    <img src="./assets/10%20birthday%20poster.png" alt="Digital Gift + Package offers Sample" loading="lazy">
+                </div>
+                <h3>10. Digital Gift + Package offers</h3>
+                <p>Poster, Story design, Wallpaper, Instagram post (₹299–₹599).</p>
+                <div class="highlight-bundle">
+                    <h4>Special Bundle</h4>
+                    <p>Buy a beautiful bundle of 2 posters, 1 story design, 2 customized wallpapers, and 1 instagram post design at just <strong>₹499</strong>!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="section-header text-center fade-in">
+                <h2 class="section-title">Portfolio Showcase</h2>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="posters">Posters</button>
+                    <button class="filter-btn" data-filter="magazines">Magazines</button>
+                    <button class="filter-btn" data-filter="social">Social Media</button>
+                </div>
+            </div>
+            
+            <div class="masonry-grid">
+                <!-- Using uploaded images -->
+                <div class="portfolio-item fade-in" data-category="magazines">
+                    <img src="./assets/1.png" alt="Magazine Cover THE AI REVOLUTION" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Magazine Cover</h3>
+                        <p>THE AI REVOLUTION</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-category="posters">
+                    <img src="./assets/2.png" alt="Poster Design Porsche 911 GT3" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Automotive Poster</h3>
+                        <p>Porsche 911 GT3 RS</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-category="posters">
+                    <img src="./assets/3.png" alt="Typography Poster Design Studio" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Typography Poster</h3>
+                        <p>Design Studio</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-category="magazines">
+                    <img src="./assets/4.png" alt="Magazine Cover Design ANIME WORLD" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Magazine Cover</h3>
+                        <p>Yor Forger - Anime World</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-category="posters">
+                    <img src="./assets/5.png" alt="Poster Design HEAVEN PERFUME" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Social Media Ad</h3>
+                        <p>Heaven Perfume Concept</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-category="posters">
+                    <img src="./assets/6.png" alt="Product Design AI CHAI SHAI PREMIUM" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Product & Branding</h3>
+                        <p>Chai Shai Premium</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-category="magazines">
+                    <img src="./assets/7.png" alt="University Magazine Cover Work" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Editorial Layout</h3>
+                        <p>University Magazine Project</p>
+                    </div>
+                </div>
+                <div class="portfolio-item fade-in" data-category="magazines">
+                    <img src="./assets/8.png" alt="University Magazine Cover Work" loading="lazy">
+                    <div class="portfolio-overlay">
+                        <h3>Editorial Layout</h3>
+                        <p>University Magazine Project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section">
+        <div class="container">
+            <h2 class="section-title text-center fade-in">Achievements & Experience</h2>
+            <div class="achievements-grid">
+                <div class="achievement-card fade-in">
+                    <i class="fa-solid fa-trophy"></i>
+                    <h3>Google Gemini Competition</h3>
+                    <p>Awarded in a Product Design Competition for excellence in AI prompting and product thinking.</p>
+                    <button id="view-cert-btn" class="text-link-btn">View Certificate</button>
+                </div>
+                <div class="achievement-card fade-in delay-1">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>University Magazine Designer</h3>
+                    <p>Worked as a Magazine Designer for a university magazine project.</p>
+                </div>
+                <div class="achievement-card fade-in delay-2">
+                    <i class="fa-solid fa-palette"></i>
+                    <div class="counter" data-target="100">0</div>
+                    <h3>+ Creative Projects</h3>
+                    <p>Posters, editorial layouts, social media content, and visual storytelling concepts.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Process -->
+    <section id="process" class="process section">
+        <div class="container text-center">
+            <h2 class="section-title fade-in">The Creative Process</h2>
+            <div class="process-timeline">
+                <div class="process-step fade-in">
+                    <div class="step-icon">1</div>
+                    <h4>Discover</h4>
+                </div>
+                <div class="process-step fade-in delay-1">
+                    <div class="step-icon">2</div>
+                    <h4>Research</h4>
+                </div>
+                <div class="process-step fade-in delay-2">
+                    <div class="step-icon">3</div>
+                    <h4>Sketch</h4>
+                </div>
+                <div class="process-step fade-in delay-3">
+                    <div class="step-icon">4</div>
+                    <h4>Design</h4>
+                </div>
+                <div class="process-step fade-in delay-4">
+                    <div class="step-icon">5</div>
+                    <h4>Refine</h4>
+                </div>
+                <div class="process-step fade-in delay-5">
+                    <div class="step-icon">6</div>
+                    <h4>Deliver</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+        <div class="container">
+            <h2 class="section-title text-center fade-in">Client Love</h2>
+            <div class="testimonial-carousel fade-in">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review">"Manpreet transformed a simple idea into a design that looked absolutely professional. The final result exceeded my expectations."</p>
+                    <p class="client-name">— Aditi Sharma</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review">"Beautiful layouts, amazing creativity and quick delivery. The attention to detail was impressive."</p>
+                    <p class="client-name">— Harsh Verma</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review">"One of the most creative student designers I have worked with. Highly recommended for posters and magazine designs."</p>
+                    <p class="client-name">— Riya Kapoor</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review">"The presentation design looked better than many professional agencies. Outstanding work."</p>
+                    <p class="client-name">— Aman Singh</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review">"Creative, patient and incredibly talented. Every design felt unique and personal."</p>
+                    <p class="client-name">— Simran Kaur</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="contact-wrapper fade-in">
+                <div class="contact-info">
+                    <h2 class="section-title">Ready to Order?</h2>
+                    <p>Message us on WhatsApp to get started with your custom design. <strong>First 10 customers enjoy 40% off!!</strong></p>
+                    <p>Preeti Studio: Your one-stop creative design destination.</p>
+                    
+                    <div class="contact-links mt-4">
+                        <a href="https://wa.me/message/656EJCZHOSJBJ1" target="_blank" rel="noopener noreferrer" class="contact-btn whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+                        </a>
+                        <a href="https://www.instagram.com/its_preetistudio?igsh=MTRzOGdta2k1ejl4bw==" target="_blank" rel="noopener noreferrer" class="contact-btn instagram">
+                            <i class="fa-brands fa-instagram"></i> Instagram
+                        </a>
+                        <a href="https://pin.it/5slGmuqYj" target="_blank" rel="noopener noreferrer" class="contact-btn pinterest">
+                            <i class="fa-brands fa-pinterest"></i> Pinterest
+                        </a>
+                        <a href="https://www.linkedin.com/posts/manpreet-kaur-221061370_design-creativity-learning-activity-7468506512861224960-VVWf" target="_blank" rel="noopener noreferrer" class="contact-btn linkedin">
+                            <i class="fa-brands fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h3>PREETI STUDIO</h3>
+                <p>Creating meaningful digital experiences.</p>
+            </div>
+            <div class="footer-links">
+                <a href="https://wa.me/message/656EJCZHOSJBJ1" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.instagram.com/its_preetistudio?igsh=MTRzOGdta2k1ejl4bw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://pin.it/5slGmuqYj" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Preeti Studio. All rights reserved.</p>
+                <a href="#hero" class="back-to-top" aria-label="Back to Top"><i class="fa-solid fa-arrow-up"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Certificate Lightbox Modal -->
+    <div id="certificate-modal" class="modal-wrapper">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close certificate modal">&times;</button>
+            <div class="certificate-image-container">
+                <img src="./assets/certificate.png" alt="Google Gemini Competition Certificate" class="protected-certificate" draggable="false" oncontextmenu="return false;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
