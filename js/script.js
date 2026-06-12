@@ -179,7 +179,25 @@ counters.forEach(counter => {
     counterObserver.observe(counter);
 });
 
-// Contact Form Prevention (Mock) removed so FormSubmit can work
+// Contact Form Prevention (Mock)
+const contactForm = document.getElementById('contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const btn = contactForm.querySelector('button');
+        const originalText = btn.innerText;
+        btn.innerText = 'Sending...';
+        setTimeout(() => {
+            btn.innerText = 'Message Sent!';
+            btn.style.backgroundColor = '#4CAF50';
+            contactForm.reset();
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.style.backgroundColor = '';
+            }, 3000);
+        }, 1500);
+    });
+}
 
 // Security Protections (Disable Right-Click, PrintScreen detection, Save Page, and DevTools shortcuts)
 document.addEventListener('contextmenu', (e) => {
@@ -241,15 +259,12 @@ window.addEventListener('afterprint', () => {
     document.body.style.filter = 'none';
 });
 
-// Blur website when it loses focus to prevent OS snipping tools
+// Extreme screenshot prevention (blurs the page if the browser loses focus e.g. Snipping Tool overlay)
 window.addEventListener('blur', () => {
-    // Highly blur the portrait image container specifically, and the body
     document.body.style.filter = 'blur(20px)';
-    document.body.style.opacity = '0.1'; // Make it very hard to see
 });
 window.addEventListener('focus', () => {
     document.body.style.filter = 'none';
-    document.body.style.opacity = '1';
 });
 
 // Certificate Modal Functionality
