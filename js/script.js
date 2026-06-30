@@ -1,3 +1,13 @@
+// Force page to always load at the top
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
+window.addEventListener('load', () => {
+    window.scrollTo(0, 0);
+});
+
 // Loading Screen
 window.addEventListener('load', () => {
     const loader = document.querySelector('.loader-wrapper');
